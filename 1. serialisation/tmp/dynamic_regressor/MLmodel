@@ -1,0 +1,28 @@
+flavors:
+  python_function:
+    artifacts:
+      model_path:
+        path: artifacts/sklearn_model.joblib
+        uri: ./tmp/sklearn_model.joblib
+    cloudpickle_version: 3.0.0
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.12.0
+    streamable: false
+mlflow_version: 2.15.0
+model_size_bytes: 9020
+model_uuid: b0fd22fd12b34e7fbdb5ecfbb5a434fe
+saved_input_example_info:
+  artifact_path: input_example.json
+  format: tf-serving
+  serving_input_path: serving_input_payload.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 2]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-07-31 06:03:10.134013'
